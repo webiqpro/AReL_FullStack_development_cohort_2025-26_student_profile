@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deng Malou Portfolio - Hire Me</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" aria-label="Homepage">
+        <h1 class="logo">DM</h1>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="project.html">Projects</a>
+        <a href="hireme.html" class="btn-hire" aria-current="page">Hire Me</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile menu">
+      <div class="mobile-menu-content">
+        <a href="index.html" aria-label="Homepage">
+          <h1 class="logo">DM</h1>
+        </a>
+        <nav class="nav-mobile" aria-label="Mobile navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="project.html">Projects</a>
+          <a href="hireme.html" class="btn-hire" aria-current="page">Hire Me</a>
+        </nav>
+        <button class="close-btn" aria-label="Close menu">&times;</button>
+      </div>
+    </div>
+  </header>
+
+<section class="hire-container-section">
+  <div class="hire-container" role="main">
+    <h1><u>Hire Me</u></h1>
+    <p>Looking for a skilled web developer to create modern, responsive websites? I specialize in designing and building using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Joomla CMS</strong> to bring your ideas to life.</p>
+
+    <h2><u>What I Can Do</u></h2>
+    <ul>
+      <li><strong>HTML & CSS:</strong> Clean, semantic markup and responsive styling for smooth user experiences.</li>
+      <li><strong>JavaScript:</strong> Interactive features, animations, and dynamic content for engaging websites.</li>
+      <li><strong>Joomla CMS:</strong> Custom Joomla website design, setup, and management tailored to your needs.</li>
+      <li><strong>Cross-Device Support:</strong> Websites that look great and work well on desktops, tablets, and phones.</li>
+    </ul>
+
+    <h2><u>Why Hire Me?</u></h2>
+    <ul>
+      <li>Years of hands-on experience building websites from scratch and using Joomla.</li>
+      <li>Strong focus on clean code, usability, and performance.</li>
+      <li>Good communication and reliable project delivery.</li>
+      <li>Passion for continuous learning to keep up with web trends.</li>
+    </ul>
+
+    <h2><u>Recent Projects</u></h2>
+    <ul>
+      <li><a href="https://dengmalou94.github.io/Kakuma-Market-Tracker-App/" target="_blank" rel="noopener">Market Tracker App</a> – Real-time market trends with clean design.</li>
+      <li><a href="https://dengmalou94.github.io/weather-App/" target="_blank" rel="noopener">Weather App</a> – Live weather data using JavaScript and APIs.</li>
+      <li><a href="https://dmalou.arellabs.org/galisogallery/" target="_blank" rel="noopener">Joomla(Website Design)</a> – a professional and visually appealing photographer website using Joomla, showcasing stunning galleries and easy content management.</li>
+    </ul>
+
+    <form action="mailto:dengmalou74@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <textarea name="Message" rows="4" placeholder="Tell me about your project..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+<section id="contact" class="section-1">
+  <h2>Contact</h2>
+  <p><strong>Address:</strong> Nairobi, Kenya</p>
+  <p><strong>Location:</strong> Turkana East | Lodwar | Kakuma</p>
+  <p><strong>Phone:</strong> +254743236636</p>
+  <p>
+    Email:
+    <a href="mailto:dengmalou74@gmail.com">dengmalou74@gmail.com</a>
+  </p>
+
+  <div class="social-links" aria-label="Social media links">
+        <a href="https://github.com/DengMalou94" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+         <i class="fab fa-github" style="color: #000000;"></i>
+
+        </a>
+
+        <a href="https://www.facebook.com/daniel.deng.3785" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fab fa-facebook" style="color: #2c66bd;"></i>
+        </a>
+
+        <a href="https://www.instagram.com/deng_gutbor/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+           <i class="fab fa-instagram" style="color: #e239b5;"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/deng-malou94/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin" style="color: #0A66C2;"></i>
+
+        </a>
+    
+      <a href="https://x.com/home" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+        <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
+
+      </a>
+      </div>
+</section>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Deng Malou. All Rights Reserved.</p>
+  </footer>
+
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    function toggleMenu() {
+      mobileMenu.classList.toggle('active');
+    }
+
+    navToggle.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
+  </script>
+</body>
+</html>
