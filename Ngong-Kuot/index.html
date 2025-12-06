@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Ngong Kuot</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Ngong Kuot</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h2>Hello, I'm Ngong Kuot</h2>
+            <p>Aspiring Developer | Ajira Mentorship Program</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a passionate learner currently enrolled in the Ajira Software Mentorship Program. 
+            I am dedicated to building my skills in web development and creating meaningful projects.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="skill-container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML5</h3>
+                    <p>Building semantic and accessible web structures</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS3</h3>
+                    <p>Creating responsive and beautiful designs</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Adding interactivity to web applications</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Git & GitHub</h3>
+                    <p>Version control and collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="Mentorship-container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project 1: Portfolio Website</h3>
+                    <p>A personal portfolio showcasing my journey in the Ajira mentorship program.</p>
+                    <span class="status done">Done</span>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2: Todo App</h3>
+                    <p>A task management application built with HTML, CSS, and JavaScript.</p>
+                    <span class="status progress">In Progress</span>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3: Calculator</h3>
+                    <p>A functional calculator application demonstrating JavaScript skills.</p>
+                    <span class="status done">Done</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section  -->
+    <section id="contact" class="contact">
+        <div class="form-container">
+             <h2 class="section-title">Contact Me</h2>
+           <form class="contact-form" id="form1">
+              <input type="text" placeholder="Your Name" required>
+              <input type="email" placeholder="Your Email" required>
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+              <button type="submit" class="btn" onclick="submitFormData()">Send Message</button>
+          </form>
+       </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. Built during Ajira Mentorship Program.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
