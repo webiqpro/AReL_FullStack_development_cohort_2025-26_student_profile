@@ -3,10 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aluong Dot - UX Designer & Full-Stack Developer</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<script src="index.js"></script>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="assets/ALUONG DOT YUOL.png" alt="Aluong Dot" class="logo"></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="background-image:url('assets/ALUONG\ DOT\ YUOL.png'); background-size:cover; background-position:center; background-attachment:fixed;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">International, Colourful,</span>
+                        <span class="gradient-text">Human-Centered UX</span>
+                    </h1>
+                    <p class="hero-subtitle">I build products that are usable, accessible and delightful.</p>
+                    <div class="hero-buttons">
+                        <a href="Projects.html" class="btn-primary">View Projects</a>
+                        <a href="contact.html" class="btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="training-badges">
+            <div class="container">
+                <div class="badges-grid">
+                    <div class="badge">
+                        <span class="badge-icon">🚀</span>
+                        <span class="badge-text">AReL - Full-stack Development</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">💻</span>
+                        <span class="badge-text">PLP - Software Development</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">🤖</span>
+                        <span class="badge-text">Moringa - AI ACCESS</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">🔒</span>
+                        <span class="badge-text">Cybersecurity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-preview">
+            <div class="container">
+                <h2 class="section-title">What I Do</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🌐</div>
+                        <h3>Full-Stack Development</h3>
+                        <p>Built complete web apps from UX to deployment.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <h3>UX Design</h3>
+                        <p>Human-centered, accessible design and micro-interactions.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">⚙️</div>
+                        <h3>Software</h3>
+                        <p>Production-ready modules and clean frontends.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="About.html" class="btn-link">Learn More About Me →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to collaborate?</h2>
+                <p>Let's create something amazing together.</p>
+                <a href="contact.html" class="btn-primary">Start a Conversation</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aluong Dot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
